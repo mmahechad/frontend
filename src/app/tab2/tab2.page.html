@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Tab Two
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngFor="let info of paises">
+        <img src="{{info.flag}}" />
+        <H1>Información Requerida Por El Profe</H1>
+        <!-- <ion-title>
+            <H2>Nombre:{{info.name}} </H2>
+        </ion-title>
+        <ion-title>Abreviatura:{{info.alpha3Code}}</ion-title>
+        <ion-title>Japanese Translation:{{info.translations.ja}}</ion-title>
+        <ion-title>Capital:{{info.capital}} </ion-title>
+        <ion-title>Idioma:{{info.languages[0].nativeName}} </ion-title> -->
+
+        <ion-title>
+            <H2>Nombre:{{info.nombre}} </H2>
+        </ion-title>
+        <ion-title>Edad:{{info.edad}}</ion-title>
+        <ion-title>Género:{{info.genero}}</ion-title>
+        <ion-title>e-mail:{{info.email}} </ion-title>
+        <ion-title>Localidad:{{info.localidad}} </ion-title>
+        <ion-title>Teléfono:{{info.telefono}} </ion-title>
+
+
+
+    </ion-card>
+
+
+</ion-content>
